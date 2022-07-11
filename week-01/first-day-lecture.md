@@ -21,6 +21,7 @@
         - Solutions
         - Teamwork
         - Empathy
+        - Time Management
     - Developer is not the only career path coming out of this bootcamp, just the most common
         - project manager
         - technical recruiter
@@ -60,7 +61,7 @@
 
 ## Congratulations on completing the pre-work/passing the test
 - The pre-work was a test of your ability to work through obstacles.
-- It was a taste of what the bootcamp and the rest of your coding career will will be like...
+- It was a taste of what the bootcamp and the rest of your coding career will be like...
 - Coding and web development languages are changing constantly and fast
 - So fast that it's a common occurrence to come across tutorials and instructions that will be out of date...
 - ...like the ed25519 key type option in putty
@@ -84,7 +85,6 @@
     - What you did (including tech work/events outside of class)
     - What you're going to do next
 - Code alongs
-    - twice a week
     - about an hour
     - make a github repo and push your code to it
 
