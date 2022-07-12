@@ -1,0 +1,53 @@
+Name: Bob Saget
+Technology: 
+    Devices: 
+        Apple IPhone 12 running IOS 15 with Safari
+        Macbook Air running MacOS Monterey with Safari and Firefox
+    Proficency: 
+        Average proficency with Apple products. Can easily complete simple tasks like running updates, sending email, and eccomerce. 
+        Loves new technology and thinks tech is going to save the world.
+Attitudes and Needs:
+    Bob uses twitter to promote his small business, and to follow the latest news related to his hobbies.
+    Bob Needs to be able to network with others to build expsoure and expand his reach.
+    Bob hates that Instagram is so heavily focused on images, and facebook is full of pestimism and fake news.
+     He wants to be where new trends are being set not hearing about it on other platforms. 
+     Bob wants to share his thoughts quickly and get his ideas out there.     
+    Bob did not appear on Fullhouse
+
+User Stories 
+
+   *  As a casual user I want to highlight the success of my business 
+    As a power user I want to see imediate updates about my hobbies.
+    As a daily user I want to be able to upload images to show off my favorite memes
+    As an admin user, I want to ban accounts that encourage violence
+    As a bot user I want to post fast as possible
+
+Usecase:
+
+    Bob owns a small business that creates and sells prebuilt and custom gaming Desktops. 
+    Bob has completed a new Desktop that he is desperate to sell because he went over budget and wants to free up capital to buy parts for custom order he just recived.
+    In order to quickly sell the computer Bob wants to create a new twitter post with an image to show off to his followers in the hopes someone may buy it.
+
+Precondition: Bob is signed into his companies twitter account.
+PostCondition: Bobs tweet gains visibilty and traction with his customers
+
+Interaction Flow: 
+* After logging in bob finds himself on his homepage for twitter.
+* Bob Sees the Whats happening prompt in the create twitter form and clicks into the form
+* Twitter grabs his cursor and moves focus into the form.
+* Bob begins wrting out the content for his tweet
+* Twitter shows bobb how many charecters he has before reaching a tweets max length.
+* Bob notices he is reaching his charecter limit and decides to post a thread so he finds a placea natural place to stop and clicks on the media button.
+* twittr opens up a file finder so Bob can pick her image.
+* Bob picks his iamge and clicks okay.
+* Twitter displays his image below the tweet.
+* Bob quickly proof reads his tweet and presses enter.
+* twitter queues his tweet to be aded to his followers timeline and displays the tweet in Bobs browser.
+* Bob responds to his tweet to addd a thread write out the rest of his content and hits enter
+* twitter creates a thread displaying the rest of his content
+
+
+
+
+
+
