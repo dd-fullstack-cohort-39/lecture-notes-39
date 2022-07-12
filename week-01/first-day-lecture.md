@@ -99,7 +99,6 @@
     - best way to reach instructors
     - each of you has your own channel
     - cohort-web-39
-    - current-community
 - Calendar: https://calendar.google.com/calendar?cid=Ym9vdGNhbXBjb2RlcnNAZ21haWwuY29t
 - GitHub: https://github.com/dd-fullstack-cohort-39
     - All relevant example and other repos posted there
@@ -111,6 +110,7 @@
     - notepad
     - notion
     - keep
+    - OneNote?
     - markdown https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 - Rubrics
     - http://ddc-web-curriculum.cnm.edu/pwp-evaluation-rubric/
