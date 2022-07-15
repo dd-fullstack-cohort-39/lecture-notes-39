@@ -2,6 +2,7 @@
 
 let thisIsAString = 'hello world'
 console.log(thisIsAString)
+console.log(thisIsAString.toUpperCase())
 
 let postImage = 'https://somesillycatpic.com'
 let postText = 'my cat is cooler than yours'
@@ -31,4 +32,25 @@ let dogPost = {
 console.log(catPost)
 // console log the name from the object
 console.log(catPost.name)
+console.table(catPost)
 
+// arrays
+let myArray = [7, 4, 12, 8]
+console.log(myArray)
+console.log(myArray[0])
+console.log(myArray[2])
+
+let myArrayOfKids = ['Mayla', 'Yuri', 'Adri']
+console.table(myArrayOfKids)
+console.log(myArrayOfKids[2])
+
+let arrayOfPosts = [
+  catPost,
+  dogPost
+]
+
+console.log(arrayOfPosts)
+console.log(arrayOfPosts[1])
+console.log(arrayOfPosts[1].avatar)
+
+arrayOfPosts.forEach(post => console.log(post.name))
