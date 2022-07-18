@@ -9,3 +9,6 @@ let displayLabel = (text) => {
   console.log(text)
 }
 displayLabel('Arrow')
+
+// single line arrow function syntax
+let displaySomething = text => console.log(text)
