@@ -44,6 +44,7 @@ let myArrayOfKids = ['Mayla', 'Yuri', 'Adri']
 console.table(myArrayOfKids)
 console.log(myArrayOfKids[2])
 
+// make array of posts
 let arrayOfPosts = [
   catPost,
   dogPost
