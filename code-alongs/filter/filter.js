@@ -191,3 +191,25 @@ const people = [{
     'bs': 'target end-to-end models'
   }
 }]
+
+const bret = people.filter(person => person.username === 'Bret')
+
+console.log(bret)
+
+people.forEach(person => console.log(person.phone))
+
+const peopleThatHavePhoneNumbersOf14OrLessChar = people.filter(person => person.phone.length <= 14)
+console.log(peopleThatHavePhoneNumbersOf14OrLessChar)
+peopleThatHavePhoneNumbersOf14OrLessChar.forEach(person => console.log(person.phone))
+
+const peopleWithExtensionsOnPhone = people.filter(person => !(person.phone.length <= 14))
+peopleWithExtensionsOnPhone.forEach(person => console.log(person.phone))
+
+console.log(!true)
+console.log(true !== false)
+console.log(!(true === false))
+
+const oddPeople = people.filter(person => person.id % 2)
+oddPeople.forEach(person => console.log(person.id))
+const evenPeople = people.filter(person => !(person.id % 2))
+evenPeople.forEach(person => console.log(person.id))
