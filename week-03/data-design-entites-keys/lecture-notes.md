@@ -34,6 +34,14 @@
 - Not responses!  Those are also other entities
 - How do we make sure those other entities can be found?  We create another entity
     - Class activity: Twitter Profile Entity
+        - profileUsername
+        - profilePhoto
+        - profileBio
+        - profileDisplayName
+        - profileLocation
+        - profileLinks
+        - profileJoinDate
+
 
 
 ## Relationships
