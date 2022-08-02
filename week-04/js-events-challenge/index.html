@@ -4,18 +4,21 @@
 	<meta charset="UTF-8">
 	<title>JS Events Challenge</title>
 </head>
-<body>
+<body onwheel="scrollDelete()">
 <h1>JS Events Challenge</h1>
 
 <h2>Change Text Color</h2>
 <p id="paragraph1">Chuck Norris doesn't wash his clothes, he disembowels them. Chuck Norris doesn't churn butter. He roundhouse kicks the cows and the butter comes straight out, Chuck Norris doesn't wash his clothes, he disembowels them, If you spell Chuck Norris in Scrabble, you win. Forever. Chuck Norris once had an energy drink. It was banned in 58 states, Canada, Russia, and Painlandia which is wherever Chuck goes. When Chuck Norris does a pushup, he isn't lifting himself up, he's pushing the Earth down. </p>
 <button onclick="changeTextColor()">Change Text Color</button>
 
-<h2></h2>
-<p>Chuck Norris can win a game of Connect Four in only three moves. Chuck Norris originally appeared in the "Street Fighter II" video game, but was removed by Beta Testers because every button caused him to do a roundhouse kick. When asked bout this "glitch," Norris replied, "That's no glitch.", Chuck Norris uses pepper spray to spice up his steaks Chuck Norris can slam a revolving door, When Chuck Norris does a pushup, he isn't lifting himself up, he's pushing the Earth down. Chuck Norris is the reason why Waldo is hiding, Police label anyone attacking Chuck Norris as a Code 45-11</p>
+<h2>Shuffle Words On Mouse Enter</h2>
+<p onmouseenter="shuffleWords()" id="shuffleWords">Chuck Norris can win a game of Connect Four in only three moves. Chuck Norris originally appeared in the "Street Fighter II" video game, but was removed by Beta Testers because every button caused him to do a roundhouse kick. When asked bout this "glitch," Norris replied, "That's no glitch.", Chuck Norris uses pepper spray to spice up his steaks Chuck Norris can slam a revolving door, When Chuck Norris does a pushup, he isn't lifting himself up, he's pushing the Earth down. Chuck Norris is the reason why Waldo is hiding, Police label anyone attacking Chuck Norris as a Code 45-11</p>
 
-<h2></h2>
-<p>If something is to good to be true, it's Chuck Norris. There is no chin behind Chuck Norris' beard. There is only another fist Chuck Norris can slam a revolving door. Chuck Norris has two speeds. Walk, and Kill. Chuck Norris is so fast, he can run around the world and punch himself in the back of the head. Chuck Norris doesn't churn butter. He roundhouse kicks the cows and the butter comes straight out. </p>
+<h2>Scroll Anywhere To Delete Words</h2>
+<p id="scrollDelete">If something is to good to be true, it's Chuck Norris. There is no chin behind Chuck Norris' beard. There is only another fist Chuck Norris can slam a revolving door. Chuck Norris has two speeds. Walk, and Kill. Chuck Norris is so fast, he can run around the world and punch himself in the back of the head. Chuck Norris doesn't churn butter. He roundhouse kicks the cows and the butter comes straight out. Chuck Norris can win a game of Connect Four in only three moves. Chuck Norris originally appeared in the "Street Fighter II" video game, but was removed by Beta Testers because every button caused him to do a roundhouse kick. When asked bout this "glitch," Norris replied, "That's no glitch.", Chuck Norris uses pepper spray to spice up his steaks Chuck Norris can slam a revolving door, When Chuck Norris does a pushup, he isn't lifting himself up, he's pushing the Earth down. Chuck Norris is the reason why Waldo is hiding, Police label anyone attacking Chuck Norris as a Code 45-11</p>
+
+<h2>Click to ROT-13</h2>
+<p onclick="rot13()" id="rot13">Chuck Norris can win a game of Connect Four in only three moves. Chuck Norris originally appeared in the "Street Fighter II" video game, but was removed by Beta Testers because every button caused him to do a roundhouse kick. When asked bout this "glitch," Norris replied, "That's no glitch.", Chuck Norris uses pepper spray to spice up his steaks Chuck Norris can slam a revolving door, When Chuck Norris does a pushup, he isn't lifting himself up, he's pushing the Earth down. Chuck Norris is the reason why Waldo is hiding, Police label anyone attacking Chuck Norris as a Code 45-11</p>
 
 <script src="script.js"></script>
 </body>
