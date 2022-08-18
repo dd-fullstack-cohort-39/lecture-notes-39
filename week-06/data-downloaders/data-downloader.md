@@ -28,50 +28,70 @@
 
 ## Example
 ``` typescript
-import axios from "axios"
+import axios from 'axios';
+import { v1 as uuid } from 'uuid';
+import {Tweet} from '../interfaces/Tweet';
+import {insertTweet} from '../tweet/insertTweet';
+import {setHash} from '../auth.utils';
+import {insertProfile} from '../profile/insertProfile';
+import {Profile} from '../interfaces/Profile';
 
-interface Post {
-	postId: string | null,
-	postUserId: number,
-	postContent: string,
-	postTitle: string
-}
-
-function dataDownloader() : Promise<any> {
-	return main()
+function ddcTweetDataDownloader() : Promise<any> {
 	async function main() {
-		try {
-			await downloadPosts()
-			
-		} catch (e) {
-			console.log(e)
-		}
-	}
-	
-	async function downloadPosts() {
-		try {
-			const {data} = await axios.get("https://jsonplaceholder.typicode.com/posts")
-			
-			const createPosts = (array: any[]) : Post[] => {
-				// Change this part.  Instead of putting the posts into an arrray insert them into the database. 
-    // See https://github.com/Deep-Dive-Coding-Fullstack-Licensing/example-capstone/blob/development/backend/utils/tweet/insertTweet.ts for example.
-				const  posts : Post[] = []
-				for(let currentPost of array) {
-					let post : Post = {postId: null, postUserId: currentPost.userId, postContent: currentPost.body, postTitle: currentPost.title}
-					posts.push(post)
-				}
-				return posts
-			}
-			
-			console.log(createPosts(data))
-			
+		try{
+			await downloadUsers()
+
 		} catch (error) {
 			console.error(error)
 		}
+
+	}
+
+	return main()
+
+	async function downloadUsers() {
+		try {
+	
+			const {data} = await axios("https://api.twitter.com/tweets")
+		
+						//A fake profile must be created to own the tweets being imported for the data downloader
+						const profileHash = await setHash("ILikeFakePasswordsWithNoSpaces");
+						const profile: Profile = {
+							profileId: uuid(),
+							profileAtHandle: "mxFakeAccount",
+							profileActivationToken: null,
+							profileAvatarUrl: "http://www.fillmurray.com/150/150",
+							profileEmail: "mxFakeAccount@fake-acounts.rus",
+							profileHash,
+							profilePhone: "505-866-5309"
+						}
+						 console.log(await insertProfile(profile))
+						for (let result of data) {
+
+							const {tweetContent, tweetDate} = result
+							const tweet: Tweet = {
+								tweetId: null,
+								tweetProfileId: profile.profileId as string,
+								tweetContent,
+								tweetDate
+							}
+							console.log(await insertTweet(tweet))
+						}
+
+			
+
+		} catch (error) {
+			throw error
+		}
 	}
 }
 
-dataDownloader().catch(error => console.error(error))
+ddcTweetDataDownloader()
+	.then(finished =>{
+		console.log("finished")
+	}).catch(error => {
+	console.error(error)
+})
 ```
 
 ## Instructions for running the file
