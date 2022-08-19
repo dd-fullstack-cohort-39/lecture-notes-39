@@ -63,7 +63,7 @@
     ```
     - Both frontend and backend containers
         - This is why two Dockerfiles
-- Remove `require('dotenv').config()` from src/index.html
+- Remove `require('dotenv').config()` from src/index.ts
     - This is extraneous config that will collide with our docker config
 - Add `default.conf`
   ```
