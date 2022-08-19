@@ -26,7 +26,7 @@
     WORKDIR ./home/node/app
     RUN chown -R node:node ./
     USER node
-    COPY package.json package-lock.json index.js ./
+    COPY package.json package-lock.json index.ts ./
     RUN npm install --no-optional && npm cache clean --force
     CMD ["npm", "run", "dev"]
     ```
