@@ -105,7 +105,7 @@ setExternalData(axios.get("supercool.api"))
 * React hooks are a relatively new feature in react.
 * Hooks allow us to use the same functionality of React Class Components without having to use Classes.
 * go over the four rules of hooks.
-* The two most common hooks used in class is useState and useEffec.t
+* The two most common hooks used in class is useState and useEffect.
 * ### useState
 * The useState hook enables functional components to have state variables.
 * Changes to state variable values cause components to rerender, update.
